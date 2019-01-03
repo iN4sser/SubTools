@@ -1,0 +1,12 @@
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\bin\Release\SubToolsVB.exe.config
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\bin\Release\SubToolsVB.exe
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\bin\Release\SubToolsVB.pdb
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\bin\Release\SubToolsVB.xml
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.SubTools.resources
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.Resources.resources
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.vbproj.GenerateResource.cache
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.vbproj.CoreCompileInputs.cache
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.exe
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.xml
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.pdb
+C:\Users\iN4sser\source\repos\SubToolsVB\SubToolsVB\obj\Release\SubToolsVB.vbprojAssemblyReference.cache
