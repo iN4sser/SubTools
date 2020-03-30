@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class SubTools
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class SubTools
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SubTools))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.LogoLabel = New System.Windows.Forms.Label()
         Me.iSubBurner = New System.Windows.Forms.Button()
         Me.iDownloader = New System.Windows.Forms.Button()
@@ -33,9 +33,9 @@ Partial Class SubTools
         Me.ExitBtn = New System.Windows.Forms.Button()
         Me.MinimizeBtn = New System.Windows.Forms.Button()
         Me.SubBurnerPanel = New System.Windows.Forms.Panel()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.LogoBox = New System.Windows.Forms.PictureBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.Srt = New System.Windows.Forms.RadioButton()
-        Me.Ass = New System.Windows.Forms.RadioButton()
         Me.Start = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -99,7 +99,9 @@ Partial Class SubTools
         Me.Donate1 = New System.Windows.Forms.PictureBox()
         Me.LogoHolderPanel = New System.Windows.Forms.Panel()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.OpenFileDialogLogo = New System.Windows.Forms.OpenFileDialog()
         Me.SubBurnerPanel.SuspendLayout()
+        CType(Me.LogoBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitterPanel.SuspendLayout()
         Me.DownloaderPanel.SuspendLayout()
         Me.RecordPanel.SuspendLayout()
@@ -113,11 +115,11 @@ Partial Class SubTools
         'LogoLabel
         '
         Me.LogoLabel.AutoSize = True
-        Me.LogoLabel.Font = New System.Drawing.Font("Diavlo Bold", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LogoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LogoLabel.ForeColor = System.Drawing.Color.White
         Me.LogoLabel.Location = New System.Drawing.Point(11, 3)
         Me.LogoLabel.Name = "LogoLabel"
-        Me.LogoLabel.Size = New System.Drawing.Size(175, 46)
+        Me.LogoLabel.Size = New System.Drawing.Size(185, 42)
         Me.LogoLabel.TabIndex = 0
         Me.LogoLabel.Text = "SubTools"
         '
@@ -128,7 +130,7 @@ Partial Class SubTools
         Me.iSubBurner.Dock = System.Windows.Forms.DockStyle.Top
         Me.iSubBurner.FlatAppearance.BorderSize = 0
         Me.iSubBurner.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iSubBurner.Font = New System.Drawing.Font("Diavlo Book", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.iSubBurner.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.iSubBurner.ForeColor = System.Drawing.Color.White
         Me.iSubBurner.Location = New System.Drawing.Point(0, 52)
         Me.iSubBurner.Name = "iSubBurner"
@@ -144,7 +146,7 @@ Partial Class SubTools
         Me.iDownloader.Dock = System.Windows.Forms.DockStyle.Top
         Me.iDownloader.FlatAppearance.BorderSize = 0
         Me.iDownloader.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iDownloader.Font = New System.Drawing.Font("Diavlo Book", 14.25!)
+        Me.iDownloader.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
         Me.iDownloader.ForeColor = System.Drawing.Color.White
         Me.iDownloader.Location = New System.Drawing.Point(0, 108)
         Me.iDownloader.Name = "iDownloader"
@@ -160,7 +162,7 @@ Partial Class SubTools
         Me.iRecorder.Dock = System.Windows.Forms.DockStyle.Top
         Me.iRecorder.FlatAppearance.BorderSize = 0
         Me.iRecorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iRecorder.Font = New System.Drawing.Font("Diavlo Book", 14.25!)
+        Me.iRecorder.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
         Me.iRecorder.ForeColor = System.Drawing.Color.White
         Me.iRecorder.Location = New System.Drawing.Point(0, 159)
         Me.iRecorder.Name = "iRecorder"
@@ -176,7 +178,7 @@ Partial Class SubTools
         Me.iSplitter.Dock = System.Windows.Forms.DockStyle.Top
         Me.iSplitter.FlatAppearance.BorderSize = 0
         Me.iSplitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iSplitter.Font = New System.Drawing.Font("Diavlo Book", 14.25!)
+        Me.iSplitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
         Me.iSplitter.ForeColor = System.Drawing.Color.White
         Me.iSplitter.Location = New System.Drawing.Point(0, 210)
         Me.iSplitter.Name = "iSplitter"
@@ -193,7 +195,7 @@ Partial Class SubTools
         Me.iConsole.Enabled = False
         Me.iConsole.FlatAppearance.BorderSize = 0
         Me.iConsole.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.iConsole.Font = New System.Drawing.Font("Diavlo Book", 14.25!)
+        Me.iConsole.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
         Me.iConsole.ForeColor = System.Drawing.Color.White
         Me.iConsole.Location = New System.Drawing.Point(0, 261)
         Me.iConsole.Name = "iConsole"
@@ -243,9 +245,9 @@ Partial Class SubTools
         '
         'SubBurnerPanel
         '
+        Me.SubBurnerPanel.Controls.Add(Me.Label23)
+        Me.SubBurnerPanel.Controls.Add(Me.LogoBox)
         Me.SubBurnerPanel.Controls.Add(Me.Label19)
-        Me.SubBurnerPanel.Controls.Add(Me.Srt)
-        Me.SubBurnerPanel.Controls.Add(Me.Ass)
         Me.SubBurnerPanel.Controls.Add(Me.Start)
         Me.SubBurnerPanel.Controls.Add(Me.Label4)
         Me.SubBurnerPanel.Controls.Add(Me.Label3)
@@ -264,49 +266,45 @@ Partial Class SubTools
         Me.SubBurnerPanel.Size = New System.Drawing.Size(697, 408)
         Me.SubBurnerPanel.TabIndex = 4
         '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label23.Location = New System.Drawing.Point(51, 0)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(54, 20)
+        Me.Label23.TabIndex = 19
+        Me.Label23.Text = "Logo:"
+        '
+        'LogoBox
+        '
+        Me.LogoBox.InitialImage = Nothing
+        Me.LogoBox.Location = New System.Drawing.Point(6, 6)
+        Me.LogoBox.Name = "LogoBox"
+        Me.LogoBox.Size = New System.Drawing.Size(146, 65)
+        Me.LogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.LogoBox.TabIndex = 18
+        Me.LogoBox.TabStop = False
+        '
         'Label19
         '
         Me.Label19.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Harabara", 60.0!, System.Drawing.FontStyle.Bold)
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 60.0!, System.Drawing.FontStyle.Bold)
         Me.Label19.ForeColor = System.Drawing.Color.Gray
         Me.Label19.Location = New System.Drawing.Point(146, 1)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(391, 87)
+        Me.Label19.Size = New System.Drawing.Size(450, 91)
         Me.Label19.TabIndex = 14
         Me.Label19.Text = "Sub Burner"
-        '
-        'Srt
-        '
-        Me.Srt.AutoSize = True
-        Me.Srt.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Srt.Location = New System.Drawing.Point(170, 132)
-        Me.Srt.Name = "Srt"
-        Me.Srt.Size = New System.Drawing.Size(57, 23)
-        Me.Srt.TabIndex = 13
-        Me.Srt.Text = ".srt"
-        Me.Srt.UseVisualStyleBackColor = True
-        '
-        'Ass
-        '
-        Me.Ass.AutoSize = True
-        Me.Ass.Checked = True
-        Me.Ass.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Ass.Location = New System.Drawing.Point(111, 132)
-        Me.Ass.Name = "Ass"
-        Me.Ass.Size = New System.Drawing.Size(57, 23)
-        Me.Ass.TabIndex = 12
-        Me.Ass.TabStop = True
-        Me.Ass.Text = ".ass"
-        Me.Ass.UseVisualStyleBackColor = True
         '
         'Start
         '
         Me.Start.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.Start.FlatAppearance.BorderSize = 0
         Me.Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Start.Font = New System.Drawing.Font("Novecento sans wide Light", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.Start.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.Start.ForeColor = System.Drawing.Color.White
         Me.Start.Location = New System.Drawing.Point(29, 329)
         Me.Start.Name = "Start"
@@ -318,40 +316,40 @@ Partial Class SubTools
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label4.Location = New System.Drawing.Point(25, 258)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(194, 19)
+        Me.Label4.Size = New System.Drawing.Size(186, 20)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Additional Parameters"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.Location = New System.Drawing.Point(25, 200)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(113, 19)
+        Me.Label3.Size = New System.Drawing.Size(111, 20)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Output Path:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.Location = New System.Drawing.Point(25, 134)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 19)
+        Me.Label2.Size = New System.Drawing.Size(80, 20)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "SubTitle:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(25, 74)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(100, 19)
+        Me.Label1.Size = New System.Drawing.Size(102, 20)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Video Path:"
         '
@@ -360,7 +358,7 @@ Partial Class SubTools
         Me.SelectVideoPath1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.SelectVideoPath1.FlatAppearance.BorderSize = 0
         Me.SelectVideoPath1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SelectVideoPath1.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SelectVideoPath1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SelectVideoPath1.ForeColor = System.Drawing.Color.White
         Me.SelectVideoPath1.Location = New System.Drawing.Point(597, 94)
         Me.SelectVideoPath1.Name = "SelectVideoPath1"
@@ -374,7 +372,7 @@ Partial Class SubTools
         Me.SelectSubPath.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.SelectSubPath.FlatAppearance.BorderSize = 0
         Me.SelectSubPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SelectSubPath.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SelectSubPath.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SelectSubPath.ForeColor = System.Drawing.Color.White
         Me.SelectSubPath.Location = New System.Drawing.Point(597, 156)
         Me.SelectSubPath.Name = "SelectSubPath"
@@ -388,7 +386,7 @@ Partial Class SubTools
         Me.SelectOutput1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.SelectOutput1.FlatAppearance.BorderSize = 0
         Me.SelectOutput1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SelectOutput1.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SelectOutput1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SelectOutput1.ForeColor = System.Drawing.Color.White
         Me.SelectOutput1.Location = New System.Drawing.Point(597, 222)
         Me.SelectOutput1.Name = "SelectOutput1"
@@ -405,6 +403,7 @@ Partial Class SubTools
         Me.APBtn.Name = "APBtn"
         Me.APBtn.Size = New System.Drawing.Size(642, 27)
         Me.APBtn.TabIndex = 3
+        Me.APBtn.Text = "-vcodec libx264 -crf 23 -strict -2"
         '
         'OutpuPath
         '
@@ -423,7 +422,6 @@ Partial Class SubTools
         Me.SubtitlePath.Name = "SubtitlePath"
         Me.SubtitlePath.Size = New System.Drawing.Size(562, 27)
         Me.SubtitlePath.TabIndex = 1
-        Me.SubtitlePath.Text = "C\\:\\\\Subtitle.ass"
         '
         'VideoPath
         '
@@ -457,11 +455,11 @@ Partial Class SubTools
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Harabara", 60.0!, System.Drawing.FontStyle.Bold)
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 60.0!, System.Drawing.FontStyle.Bold)
         Me.Label22.ForeColor = System.Drawing.Color.Gray
         Me.Label22.Location = New System.Drawing.Point(127, 1)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(449, 87)
+        Me.Label22.Size = New System.Drawing.Size(522, 91)
         Me.Label22.TabIndex = 11
         Me.Label22.Text = "Video Splitter"
         '
@@ -477,41 +475,41 @@ Partial Class SubTools
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label16.Location = New System.Drawing.Point(25, 186)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(115, 19)
+        Me.Label16.Size = New System.Drawing.Size(124, 20)
         Me.Label16.TabIndex = 9
         Me.Label16.Text = "Segment Time"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.Location = New System.Drawing.Point(25, 124)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(96, 19)
+        Me.Label15.Size = New System.Drawing.Size(97, 20)
         Me.Label15.TabIndex = 8
         Me.Label15.Text = "Video Path"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label14.Location = New System.Drawing.Point(25, 246)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(109, 19)
+        Me.Label14.Size = New System.Drawing.Size(106, 20)
         Me.Label14.TabIndex = 7
         Me.Label14.Text = "Output Path"
         '
         'SplitOutputExtension
         '
-        Me.SplitOutputExtension.Font = New System.Drawing.Font("29LT Bukra Bold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SplitOutputExtension.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SplitOutputExtension.FormattingEnabled = True
         Me.SplitOutputExtension.Items.AddRange(New Object() {".mp4", ".mkv", ".avi", ".mpg", ".wmv", ".webm", ".mov", ".3gp", ".flv"})
         Me.SplitOutputExtension.Location = New System.Drawing.Point(531, 268)
         Me.SplitOutputExtension.Name = "SplitOutputExtension"
-        Me.SplitOutputExtension.Size = New System.Drawing.Size(60, 27)
+        Me.SplitOutputExtension.Size = New System.Drawing.Size(60, 26)
         Me.SplitOutputExtension.TabIndex = 6
         Me.SplitOutputExtension.Text = ".mp4"
         '
@@ -520,7 +518,7 @@ Partial Class SubTools
         Me.OutputSplit.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.OutputSplit.FlatAppearance.BorderSize = 0
         Me.OutputSplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OutputSplit.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.OutputSplit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.OutputSplit.ForeColor = System.Drawing.Color.White
         Me.OutputSplit.Location = New System.Drawing.Point(597, 268)
         Me.OutputSplit.Name = "OutputSplit"
@@ -550,7 +548,7 @@ Partial Class SubTools
         Me.SelectSplit.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.SelectSplit.FlatAppearance.BorderSize = 0
         Me.SelectSplit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SelectSplit.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SelectSplit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SelectSplit.ForeColor = System.Drawing.Color.White
         Me.SelectSplit.Location = New System.Drawing.Point(597, 146)
         Me.SelectSplit.Name = "SelectSplit"
@@ -564,7 +562,7 @@ Partial Class SubTools
         Me.StartSplitting.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.StartSplitting.FlatAppearance.BorderSize = 0
         Me.StartSplitting.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.StartSplitting.Font = New System.Drawing.Font("Novecento sans wide Light", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StartSplitting.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StartSplitting.ForeColor = System.Drawing.Color.White
         Me.StartSplitting.Location = New System.Drawing.Point(29, 329)
         Me.StartSplitting.Name = "StartSplitting"
@@ -613,11 +611,11 @@ Partial Class SubTools
         Me.Label20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Harabara", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.Gray
         Me.Label20.Location = New System.Drawing.Point(109, 24)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(496, 103)
+        Me.Label20.Size = New System.Drawing.Size(564, 108)
         Me.Label20.TabIndex = 6
         Me.Label20.Text = "Downloader"
         '
@@ -627,10 +625,10 @@ Partial Class SubTools
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label6.Location = New System.Drawing.Point(25, 174)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(87, 19)
+        Me.Label6.Size = New System.Drawing.Size(83, 20)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Video Url"
         '
@@ -640,10 +638,10 @@ Partial Class SubTools
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label5.Location = New System.Drawing.Point(25, 243)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(88, 19)
+        Me.Label5.Size = New System.Drawing.Size(91, 20)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Save Path"
         '
@@ -654,7 +652,7 @@ Partial Class SubTools
         Me.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.DownloadBtn.FlatAppearance.BorderSize = 0
         Me.DownloadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.DownloadBtn.Font = New System.Drawing.Font("Novecento sans wide Light", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.DownloadBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.DownloadBtn.ForeColor = System.Drawing.Color.White
         Me.DownloadBtn.Location = New System.Drawing.Point(29, 329)
         Me.DownloadBtn.Name = "DownloadBtn"
@@ -669,7 +667,7 @@ Partial Class SubTools
         Me.SelectSavePath.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.SelectSavePath.FlatAppearance.BorderSize = 0
         Me.SelectSavePath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SelectSavePath.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SelectSavePath.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SelectSavePath.ForeColor = System.Drawing.Color.White
         Me.SelectSavePath.Location = New System.Drawing.Point(592, 264)
         Me.SelectSavePath.Name = "SelectSavePath"
@@ -726,31 +724,31 @@ Partial Class SubTools
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Harabara", 60.0!, System.Drawing.FontStyle.Bold)
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 60.0!, System.Drawing.FontStyle.Bold)
         Me.Label21.ForeColor = System.Drawing.Color.Gray
         Me.Label21.Location = New System.Drawing.Point(66, 1)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(572, 87)
+        Me.Label21.Size = New System.Drawing.Size(655, 91)
         Me.Label21.TabIndex = 14
         Me.Label21.Text = "Screen Recorder"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label13.Location = New System.Drawing.Point(25, 193)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(194, 19)
+        Me.Label13.Size = New System.Drawing.Size(186, 20)
         Me.Label13.TabIndex = 13
         Me.Label13.Text = "Additional Parameters"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label12.Location = New System.Drawing.Point(25, 257)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(88, 19)
+        Me.Label12.Size = New System.Drawing.Size(91, 20)
         Me.Label12.TabIndex = 12
         Me.Label12.Text = "Save Path"
         '
@@ -759,7 +757,7 @@ Partial Class SubTools
         Me.RecordBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.RecordBtn.FlatAppearance.BorderSize = 0
         Me.RecordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RecordBtn.Font = New System.Drawing.Font("Novecento sans wide Light", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.RecordBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.RecordBtn.ForeColor = System.Drawing.Color.White
         Me.RecordBtn.Location = New System.Drawing.Point(29, 329)
         Me.RecordBtn.Name = "RecordBtn"
@@ -773,7 +771,7 @@ Partial Class SubTools
         Me.SelectRecPath.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.SelectRecPath.FlatAppearance.BorderSize = 0
         Me.SelectRecPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SelectRecPath.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SelectRecPath.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SelectRecPath.ForeColor = System.Drawing.Color.White
         Me.SelectRecPath.Location = New System.Drawing.Point(597, 280)
         Me.SelectRecPath.Name = "SelectRecPath"
@@ -820,21 +818,21 @@ Partial Class SubTools
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(182, 132)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(88, 19)
+        Me.Label9.Size = New System.Drawing.Size(94, 20)
         Me.Label9.TabIndex = 5
         Me.Label9.Text = "Video FPS"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label8.Location = New System.Drawing.Point(182, 162)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(98, 19)
+        Me.Label8.Size = New System.Drawing.Size(95, 20)
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "Resolution"
         '
@@ -868,7 +866,7 @@ Partial Class SubTools
         '
         Me.GroupBox1.Controls.Add(Me.ShowRegNo)
         Me.GroupBox1.Controls.Add(Me.ShowRegYes)
-        Me.GroupBox1.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.GroupBox1.Location = New System.Drawing.Point(29, 124)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(139, 57)
@@ -879,10 +877,10 @@ Partial Class SubTools
         'ShowRegNo
         '
         Me.ShowRegNo.AutoSize = True
-        Me.ShowRegNo.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ShowRegNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ShowRegNo.Location = New System.Drawing.Point(85, 26)
         Me.ShowRegNo.Name = "ShowRegNo"
-        Me.ShowRegNo.Size = New System.Drawing.Size(50, 23)
+        Me.ShowRegNo.Size = New System.Drawing.Size(49, 24)
         Me.ShowRegNo.TabIndex = 1
         Me.ShowRegNo.Text = "No"
         Me.ShowRegNo.UseVisualStyleBackColor = True
@@ -891,10 +889,10 @@ Partial Class SubTools
         '
         Me.ShowRegYes.AutoSize = True
         Me.ShowRegYes.Checked = True
-        Me.ShowRegYes.Font = New System.Drawing.Font("Novecento sans wide Light", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ShowRegYes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ShowRegYes.Location = New System.Drawing.Point(6, 26)
         Me.ShowRegYes.Name = "ShowRegYes"
-        Me.ShowRegYes.Size = New System.Drawing.Size(55, 23)
+        Me.ShowRegYes.Size = New System.Drawing.Size(58, 24)
         Me.ShowRegYes.TabIndex = 0
         Me.ShowRegYes.TabStop = True
         Me.ShowRegYes.Text = "Yes"
@@ -954,9 +952,13 @@ Partial Class SubTools
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(29, 13)
         Me.Label18.TabIndex = 1
-        Me.Label18.Text = "v1.2"
+        Me.Label18.Text = "v1.3"
         '
-        'SubTools
+        'OpenFileDialogLogo
+        '
+        Me.OpenFileDialogLogo.FileName = "OpenFileDialog1"
+        '
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -972,10 +974,11 @@ Partial Class SubTools
         Me.Controls.Add(Me.SidePanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "SubTools"
+        Me.Name = "Form1"
         Me.Text = "SubTools"
         Me.SubBurnerPanel.ResumeLayout(False)
         Me.SubBurnerPanel.PerformLayout()
+        CType(Me.LogoBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitterPanel.ResumeLayout(False)
         Me.SplitterPanel.PerformLayout()
         Me.DownloaderPanel.ResumeLayout(False)
@@ -1021,8 +1024,6 @@ Partial Class SubTools
     Friend WithEvents SaveFileDialog2 As SaveFileDialog
     Friend WithEvents OpenFileDialogSplit As OpenFileDialog
     Friend WithEvents SaveFileDialogSplit As SaveFileDialog
-    Friend WithEvents Srt As RadioButton
-    Friend WithEvents Ass As RadioButton
     Friend WithEvents DownloaderPanel As Panel
     Friend WithEvents SelectSavePath As Button
     Friend WithEvents SavePath As TextBox
@@ -1069,4 +1070,7 @@ Partial Class SubTools
     Friend WithEvents Label22 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
+    Friend WithEvents LogoBox As PictureBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents OpenFileDialogLogo As OpenFileDialog
 End Class
